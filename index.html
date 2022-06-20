@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="icon" href="./icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--CSS-->
+    <link href="./Porfolio.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--theme-->
+    <div class="night-toggle" onClick="switchMode()">  
+        <div id="moon" class="moon"></div>  
+    </div>
+    
+    <!--nav-->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#contact-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--home-->
+    <section id="welcome-section">
+        <div class="intro-info">
+            <div class="hello">
+                <hr class="short-line">Hello
+            </div>
+            <h1>I'm Alisha Amin</h1>
+            <p>Front-End Web developer.</p>
+            <p class="quote"> We live in a world constructed of code and coders are the ones who built it for us. </p>
+        </div>
+        <div class="illustration-con">
+        <img class="illustration" src="./img/undraw_programming_re_kg9v.svg" alt="">
+        </div>
+    </section>
+
+    <br><br>
+    <!--contact-->
+    <section id="contact-link">
+        <a href="https://codepen.io/alisha-amin"><i class="fab fa-codepen"></i></a>
+        <a href="https://www.facebook.com/alishah.ameen"><i class="fab fa-facebook"></i></a>
+        <a id="profile-link" target="_blank" href="https://github.com/alisha-amin">
+            <i class="fab fa-github"></i></a>
+        <a href="https://www.freecodecamp.org/Alisha-Amin"><i class="fab fa-free-code-camp"></i></a>
+        <a href="https://www.instagram.com/alishah_ameen"><i class="fab fa-instagram"></i></a>
+    </section>
+
+    <!--Work-->
+    <section id="projects">
+        <h1>These are some of my projects</h1>
+        <div class="projects-container">
+            <a href="#">
+                <div class="project">
+                    <img src="./img/dd.PNG" alt="dd">
+                    <h2 class="project-tile">
+                        Drag & Drop Upload
+                    </h2>
+                </div>
+            </a>
+            <a href="#">
+                <div class="project">
+                    <img src="./img/gb.PNG" alt="grocery">
+                    <h2 class="project-tile">
+                        Grocery List
+                    </h2>
+                </div>
+            </a>
+
+            <a class="" href="#">
+                <div class="project">
+                    <img src="./img/todo.PNG" alt="todo">
+                    <h2 class="project-tile">
+                        TODO List
+                    </h2>
+                </div>
+            </a>
+
+            <a class="" href="#">
+                <div class="project">
+                    <img src="./img/p.PNG" alt="penguin" />
+                    <h2 class="project-tile">
+                        Penguin using CSS
+                    </h2>
+                </div>
+            </a>
+
+            <a class="" href="#">
+                <div class="project">
+                    <img src="./img/snake.PNG" alt="game" />
+                    <h2 class="project-tile">
+                        Snake Game
+                    </h2>
+                </div>
+            </a>
+
+            <a class="" href="#">
+                <div class="project">
+                    <img src="./img/img.png" alt="img" />
+                    <h2 class="project-tile">
+                        Fancy Image Hover Effect
+                    </h2>
+                </div>
+            </a>
+        </div>
+        <div class="see-all">
+            <a href="#">
+                <button>
+                    See All
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!--about-->
+    <section id="about-me">
+        <img src="./img/undraw_static_website_re_x70h.svg"  alt="svg">
+        <div class="about-con">
+            <h1>About Me</h1>
+            <p>I am Front-End web developer from Pakistan.</p>
+            <p>I enjoy taking complex problems and turning them into simple and beautiful interface designs.
+            I also love the logic and structure of coding and always strive to write elegant and efficient code, whether it is HTML, CSS, or JavaScript.
+            I have been coding since 2020. Now it has been 3 years.
+            </p>
+        </div>
+    </section>
+
+    <!--JS-->
+    <script>
+        function switchMode() {  
+        let moon = document.getElementById ("moon");  
+        if(moon.className=="moon"){  
+            moon.className="sun";  
+            document.body.style.backgroundColor = "#141D26";  
+            document.body.style.color = "#fff";  
+        }  
+        else {  
+        moon.className ="moon";  
+        document.body.style.backgroundColor = "#fff";  
+        document.body.style.color = "#000";  
+        }  
+        }
+    </script>
+</body>
+</html>
