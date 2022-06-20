@@ -1,0 +1,465 @@
+body {  
+    transition: 1.5s;  
+}  
+.night-toggle {  
+    width: 33px;  
+    height: 33px;  
+    right: 20px;  
+    top: 20px;  
+    position: absolute;  
+}  
+.night-toggle:hover{  
+    cursor: pointer;  
+}  
+.moon {  
+    background-color: transparent;  
+    box-shadow: -6px 1px 0 3px #275e8e;  
+    border-left:3px solid #27476D;  
+    border-radius:50%;  
+    width: 20px;  
+    height: 20px;  
+    margin-left:8px;  
+    margin-top:0px;  
+    transition: 2s;
+    color: white;
+}  
+.sun {  
+    background-color: #fdd462;  
+    box-shadow: 2px 0px 0px 1px #D19C29;  
+    border-radius:50%;  
+    width: 26px;  
+    height: 26px;  
+    transition: 2s;
+    color: #000;
+}
+/*nav*/
+
+#navbar li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(147, 139, 139);
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 1rem;
+}
+
+#navbar {
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*welcome*/
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section h1 {
+    font-size: 4rem;
+    margin-block-end: 0rem;
+    margin-block-start: 0;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out 0.1s;
+    animation-fill-mode: forwards;
+    transform: scaleX(0.9);
+}
+
+#welcome-section p {
+    margin-block-start: 0;
+    font-weight: 500;
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Fira Code";
+}
+
+.short-line {
+    border: none;
+    width: 50px;
+    height: 4px;
+    background-color: #797d89;
+    border-radius: 100px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.quote {
+    font-family: "Fira Code";
+    max-width: 50%;
+}
+
+.intro-info {
+    padding-left: 2rem;
+}
+
+/*contact*/
+
+#contact-link {
+    position: absolute;
+    bottom: 30px;
+    left: 2rem;
+}
+
+#contact-link a {
+    color: #757780 !important;
+    font-size: 1.5rem;
+    padding: 0 0.6rem;
+}
+
+#contact-link i:hover {
+    color: #464646;
+}
+
+/*about*/
+#about-me {
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 3rem;
+}
+
+#about-me img {
+    float: right;   
+    width: 50%;
+    height: 100%;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+#about-me .about-con p {
+    width: 40%;
+    line-height: 1.6;
+}
+
+#about-me .about-con p.tech {
+    font-weight: 500;
+    color: #3c4354;
+    font-size: 1.3rem;
+}
+
+.about-con {
+    padding: 5rem 1rem 1rem 4rem;
+}
+
+.about-con h1 {
+    font-size: 4rem;
+    margin-block-end: 0;
+    font-weight: bolder;
+}
+/*work*/
+#projects {
+    padding: 1rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 7rem;
+    padding: 7rem;
+}
+
+.project {
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.1);
+}
+
+.project:active {
+    transition: all 0.04s;
+    transform: scale(1);
+}
+
+.project h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 5px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    padding: 0.5rem;
+    display: block;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project img {
+    width: 100%;
+    height: 13rem;
+    border-radius: 15px;
+}
+
+#projects h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.see-all button {
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 0 17px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.see-all button:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+.see-all button:active {
+    transition: all 0.02s;
+    transform: translateY(0px) scale(1);
+}
+
+.see-all a {
+    color: #000;
+    display: block;
+}
+
+.see-all {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/*media*/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scaleX(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+@media (max-width: 1290px) {
+    .projects-container {
+        gap: 3rem;
+        padding: 3rem;
+    }
+
+    .illustration {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .projects-container {
+        gap: 1rem;
+        padding: 3rem 1rem;
+    }
+
+    .project h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 950px) {
+    #about-me {
+        height: unset;
+    }
+
+    #about-me img {
+        display: none;
+    }
+
+    #about-me h1 {
+        text-align: center;
+    }
+
+    #about-me .about-con p {
+        width: unset;
+    }
+
+    #about-me .about-con p.tech {
+        display: none;
+    }
+
+    .about-con {
+        padding: 5rem 2rem;
+    }
+}
+
+@media (max-width: 770px) {
+    #welcome-section {
+        display: block;
+        /* padding: 0; */
+    }
+
+    #contact-link {
+        bottom: -40px;
+        /* left: 10px; */
+    }
+
+    .intro-info {
+        padding-left: 2rem;
+        padding-top: 7rem;
+    }
+
+    #welcome-section h1 {
+        font-size: 3rem;
+    }
+
+    .illustration {
+        width: 60%;
+    }
+
+    .illustration-con {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .projects-container {
+        gap: 1rem;
+        padding: 3rem 1rem;
+    }
+
+    .project:hover {
+        transform: scale(1.04);
+    }
+
+    .project img {
+        height: 10rem;
+    }
+
+    .project h2 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .projects-container {
+        gap: 0.5rem;
+        padding: 3rem 0.5rem;
+    }
+
+    #welcome-section h1 {
+        font-size: 2rem;
+        margin-block-end: 1rem;
+        margin-block-start: 1rem;
+    }
+
+    .scroll {
+        right: 1px;
+    }
+
+    .short-line {
+        width: 30px;
+        height: 4px;
+    }
+
+    .quote {
+        font-family: "Fira Code";
+        max-width: 90%;
+    }
+
+    .project {
+        padding: 0.5rem;
+    }
+
+    .project:hover {
+        transform: scale(1.04);
+    }
+
+    .project img {
+        height: 6rem;
+    }
+
+    .project h2 {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-container {
+        gap: 1rem;
+        row-gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 0.5rem;
+    }
+
+    .project:hover {
+        transform: scale(1.04);
+    }
+
+    .project img {
+        height: 10rem;
+    }
+
+    .project h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .projects-container {
+        gap: 1rem;
+        row-gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 0.5rem;
+    }
+
+    .project:hover {
+        transform: scale(1.04);
+    }
+
+    .project img {
+        height: 8rem;
+    }
+
+    .project h2 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .projects-container {
+        gap: 1rem;
+        row-gap: 2rem;
+        grid-template-columns: 1fr;
+        padding: 1rem 0.5rem;
+    }
+
+    .project:hover {
+        transform: scale(1.04);
+    }
+
+    .project img {
+        height: 8rem;
+    }
+
+    .project h2 {
+        font-size: 0.8rem;
+    }
+}
